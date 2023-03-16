@@ -8,20 +8,32 @@ variable "acl_value" {
 
 }
 
-variable "aws_access_key" {
+variable "AWS_KEY_ID" {
 
-default = “<your_access_key>”
+default = “AKIA3B3RFAPWYIWF4XJF”
 
 }
 
-variable "aws_secret_key" {
+variable "AWS_SECRET" {
 
-default = “<your_secret_key>”
+default = “mqw8v3XOwxGNk9Cjbx20MQ9gVX9CO7V565l7R6Jj”
 
  }
 
 variable "region" {
 
-    default = "region"
+    default = "us-east-2a"
+
+}
+
+variable "bucket_name" {
+
+    default = "bootcamp30-15032023-akinwumi"
+
+}
+
+variable "acl_value" {
+
+    default = "public-read"
 
 }
