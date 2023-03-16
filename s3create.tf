@@ -1,4 +1,5 @@
-# This creates an s3 bucket with encryption
+#This creates an s3 bucket with encryption
+
 provider "aws" {
 
     access_key = "${var.AWS_KEY_ID}"
@@ -13,9 +14,18 @@ resource "aws_s3_bucket" "bootcamp30-15032023-akinwumi" {
 
     bucket = "${var.bucket_name}" 
 
-    acl = "${var.acl_value}"   
+#   acl = "${var.acl_value}"   
 
 }
+
+resource "aws_s3_bucket_acl"  "bootcamp30-15032023-akinwumi_acl" {
+  bucket = aws_s3_bucket.bootcamp30-15032023-akinwumi.bucket 
+  acl    = "${var.acl_value}"
+}
+
+
+
+
 resource "aws_kms_key" "mykey" {
     deletion_window_in_days = 10
 }
