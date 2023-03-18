@@ -1,4 +1,4 @@
-#variables
+#variables. I have edited all the secret information
 
 # variable "bucket_name" {}
 
@@ -8,12 +8,12 @@ variable "acl_value" {
 } 
 
 variable "AWS_KEY_ID" {
-    default = "AKIA3B3RFAPWYIWF4XJF"
+    default = "AKIA3WYIWF4XJF"
 
 }
 
 variable "AWS_SECRET" {
-    default = "mqw8v3XOwxGNk9Cjbx20MQ9gVX9CO7V565l7R6Jj"
+    default = "mqw8v3V565l7R6Jj"
 
  }
 
