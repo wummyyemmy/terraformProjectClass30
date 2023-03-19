@@ -3,20 +3,16 @@
 variable "acl_value" {
     default = "private"
 } 
-
-variable "AWS_KEY_ID" {
-    default = ""
-}
-variable "AWS_SECRET" {
-    default = ""
-}
-
 variable "region" {
     default = "us-east-2"
 }
-
+variable "s3buketname" {
+    default = "bootcamp30-15032023-akinwumi"
+}
 variable "bucket_name" {
     default = "bootcamp30-15032023-akinwumi"
-
+}
+variable "bucket_acl" {
+    default = "bootcamp30-15032023-acl"
 }
 
