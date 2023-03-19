@@ -1,6 +1,6 @@
 #This creates an s3 bucket with encryption
 
-rovider "aws" {
+provider "aws" {
   region = var.region
 }
 
